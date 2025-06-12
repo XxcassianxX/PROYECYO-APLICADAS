@@ -13,7 +13,7 @@ public class ImageLoader {
     public static BufferedImage load(String resourceName) {
         InputStream is = ImageLoader.class.getResourceAsStream("/images/" + resourceName);
         if (is == null) {
-            System.err.println("❌ NO SE ENCUENTRA: images/" + resourceName);
+            System.err.println("NO SE ENCUENTRA: images/" + resourceName);
             return null;
         }
         try {

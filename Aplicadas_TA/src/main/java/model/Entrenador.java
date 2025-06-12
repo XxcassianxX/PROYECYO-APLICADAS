@@ -14,7 +14,7 @@ public class Entrenador {
         BufferedImage img4 = ImageLoader.load("Etapas_de_mamografia_4.jpg");
 
         if (img1 == null || img2 == null || img3 == null || img4 == null) {
-            System.err.println("❌ Error: una o más imágenes no se pudieron cargar. Revisa la carpeta resources/images.");
+            System.err.println("Error: una o más imágenes no se pudieron cargar. Revisa la carpeta resources/images.");
             return;
         }
 
@@ -27,6 +27,6 @@ public class Entrenador {
             red.trainOnce(muestras, 0.1);
         }
 
-        System.out.println("✅ Red neuronal entrenada con éxito.");
+        System.out.println("Red neuronal entrenada con éxito.");
     }
 }
